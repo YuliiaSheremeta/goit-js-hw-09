@@ -16,3 +16,101 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+@import "simplelightbox/dist/simple-lightbox.min.css";
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+
+}
+
+img {
+  width: 360px;
+  height: 200px;
+
+  cursor: pointer;
+
+}
+
+.gallery-container {
+  width: 1128px;
+  margin: 0 auto;
+
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-image {
+  transition: transform 0.3s ease;
+
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+
+}
+
+.feedback-form{
+  display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+
+
+.label-form {
+  margin-bottom: 10px;
+
+}
+
+.label-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+}
+.input{
+  border-color: #808080;
+}
+.input:hover {
+  border-color: #000000;
+}
+.label-form .textarea{
+  display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+.textarea{
+  height: 80px;
+  border-color: #808080;
+  }
+.textarea:hover{
+  border-color: #000000;
+}
+.button-form {
+  width: 86px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+.button-form:hover{
+  background-color: #6C8CFF;
+}
