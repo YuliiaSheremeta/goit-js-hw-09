@@ -10,16 +10,11 @@ const fillFormFields = () => {
         const formDataFromLS = JSON.parse(localStorage.getItem("feedback-form-state"));
         if (formDataFromLS === null || formDataFromLS === undefined) { return; }
      
-        if (typeof formDataFromLS === 'object') {
             formData = formDataFromLS;
         
 
             for (const key in formData) {
-                if (formData.hasOwnProperty(key) && feedbackFormEl.elements[key]) {
-                    feedbackFormEl.elements[key].value = formData[key] || '';
-                };
-            }
-        }
+                feedbackFormEl.elements[key].value = formData[key];}     
     }
     
     catch (err) {
